@@ -52,3 +52,16 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# 阻止上传thinkbayes项目原始代码
+book/
+code/
+data/
+docs/
+examples/
+notebooks/
+papers/
+scripts/
+solutions/
+thinkbayes2/
+thinkplot/
+workshop/
