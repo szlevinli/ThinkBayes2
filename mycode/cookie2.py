@@ -12,3 +12,14 @@ class Cookie(Suite):
     'Bowl 1': dict(vanilla=30, cocalate=10),
     'Bowl 2': dict(vanilla=20, cocalate=20)
   }
+
+  def Likelihood(self, data, hypo):
+    totalCookies = 0
+    for v in self.mixes[hypo].values():
+      totalCookies += v
+    cookie = self.mixes[hypo][data]
+    return (cookie / totalCookies)
+
+cookie = Cookie(('Bowl 1', 'Bowl 2'))
+cookie.Update('vanilla')
+cookie.Print()
