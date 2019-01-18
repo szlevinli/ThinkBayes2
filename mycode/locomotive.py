@@ -5,13 +5,13 @@
 # 的顺序发车。加入某时某地你看到一个火车头是60号，那么请问发出了多少辆火车？
 #
 ######################################################################
-import thinkplot
-from thinkbayes2 import Suite
 import sys
 
 sys.path.insert(0, '../thinkbayes2')
 sys.path.insert(0, '../thinkplot')
 
+import thinkplot
+from thinkbayes2 import Suite
 
 class Locomotive(Suite):
 
@@ -25,6 +25,10 @@ class Locomotive(Suite):
 locomotiveNumbers = range(1, 1001)
 locomotive = Locomotive(locomotiveNumbers)
 locomotive.Update(60)
+locomotive.Update(160)
+locomotive.Update(80)
+locomotive.Update(570)
+locomotive.Update(640)
 print('Mean: {}'.format(locomotive.Mean()))
 
 thinkplot.preplot(1)
