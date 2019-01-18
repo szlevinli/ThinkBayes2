@@ -21,17 +21,20 @@ class Locomotive(Suite):
         else:
             return 1.0/hypo
 
+def main():
+    locomotiveNumbers = range(1, 1001)
+    locomotive = Locomotive(locomotiveNumbers)
+    locomotive.Update(60)
+    locomotive.Update(160)
+    locomotive.Update(80)
+    locomotive.Update(570)
+    locomotive.Update(640)
+    print('Mean: {}'.format(locomotive.Mean()))
 
-locomotiveNumbers = range(1, 1001)
-locomotive = Locomotive(locomotiveNumbers)
-locomotive.Update(60)
-locomotive.Update(160)
-locomotive.Update(80)
-locomotive.Update(570)
-locomotive.Update(640)
-print('Mean: {}'.format(locomotive.Mean()))
+    thinkplot.preplot(1)
+    thinkplot.Pmf(locomotive)
+    thinkplot.show(xlabel='Number of train',
+                ylabel='Probability')
 
-thinkplot.preplot(1)
-thinkplot.Pmf(locomotive)
-thinkplot.show(xlabel='Number of train',
-               ylabel='Probability')
+if __name__ == '__main__':
+    main()
