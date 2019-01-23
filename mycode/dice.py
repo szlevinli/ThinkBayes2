@@ -17,9 +17,14 @@ class Dice(Suite):
             return 1 / hypo
 
 
-dice = Dice([4, 6, 8, 12, 20])
-dice.Update(6)
-dice.Print()
-for roll in [6, 8, 7, 7, 5, 4]:
-    dice.Update(roll)
-dice.Print()
+def main():
+    dice = Dice([4, 6, 8, 12, 20])
+    dice.Update(6)
+    dice.Print()
+    for roll in [6, 8, 7, 7, 5, 4]:
+        dice.Update(roll)
+    dice.Print()
+
+
+if __name__ == '__main__':
+    main()

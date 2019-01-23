@@ -29,10 +29,15 @@ class Monty(Pmf):
             return 1
 
 
-hypos = 'ABC'
-monty = Monty(hypos)
-data = 'B'
-monty.Update(data)
+def main():
+    hypos = 'ABC'
+    monty = Monty(hypos)
+    data = 'B'
+    monty.Update(data)
 
-for hypo, prob, in monty.Items():
-    print('{}: {}'.format(hypo, prob))
+    for hypo, prob, in monty.Items():
+        print('{}: {}'.format(hypo, prob))
+
+
+if __name__ == '__main__':
+    main()

@@ -31,9 +31,14 @@ class Cookie(Pmf):
         return like
 
 
-hypos = ['Bowl 1', 'Bowl 2']
-pmf = Cookie(hypos)
-pmf.Update('vanilla')
+def main():
+    hypos = ['Bowl 1', 'Bowl 2']
+    pmf = Cookie(hypos)
+    pmf.Update('vanilla')
 
-for hypo, prob in pmf.Items():
-    print(hypo, prob)
+    for hypo, prob in pmf.Items():
+        print(hypo, prob)
+
+
+if __name__ == '__main__':
+    main()

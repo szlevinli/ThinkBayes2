@@ -37,8 +37,13 @@ class M_and_M(Suite):
         return like
 
 
-m_and_m = M_and_M('AB')
-m_and_m.Update(('bag1', 'yellow'))
-m_and_m.Update(('bag2', 'green'))
+def main():
+    m_and_m = M_and_M('AB')
+    m_and_m.Update(('bag1', 'yellow'))
+    m_and_m.Update(('bag2', 'green'))
 
-m_and_m.Print()
+    m_and_m.Print()
+
+
+if __name__ == '__main__':
+    main()

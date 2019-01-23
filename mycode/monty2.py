@@ -17,6 +17,11 @@ class Monty(Suite):
             return 1
 
 
-monty = Monty('ABC')
-monty.Update('B')
-monty.Print()
+def main():
+    monty = Monty('ABC')
+    monty.Update('B')
+    monty.Print()
+
+
+if __name__ == '__main__':
+    main()

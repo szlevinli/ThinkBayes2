@@ -22,6 +22,11 @@ class Cookie(Suite):
         return (cookie / totalCookies)
 
 
-cookie = Cookie(('Bowl 1', 'Bowl 2'))
-cookie.Update('vanilla')
-cookie.Print()
+def main():
+    cookie = Cookie(('Bowl 1', 'Bowl 2'))
+    cookie.Update('vanilla')
+    cookie.Print()
+
+
+if __name__ == '__main__':
+    main()
