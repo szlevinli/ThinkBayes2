@@ -65,3 +65,6 @@ solutions/
 thinkbayes2/
 thinkplot/
 workshop/
+
+# 阻止上传vscode的setting文件
+.vscode/settings.json
