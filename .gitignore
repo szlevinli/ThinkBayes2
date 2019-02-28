@@ -68,6 +68,7 @@ workshop/
 
 # 阻止上传vscode的setting文件
 .vscode/settings.json
+.vscode/launch.json
 
 # 阻止上传juypter notebook 检查点文件
 .ipynb_checkpoints/
